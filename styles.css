@@ -1,0 +1,141 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: rgba(26, 26, 26, 0.9); /* Fondo semi-transparente */
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-btn {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#hero {
+    height: 100vh; /* Ajustado para ocupar toda la altura de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20%;
+    margin-top: 80px; /* Añadido para compensar la altura del navbar */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+}
+
+#servicios {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    width: 45%;
+    margin-bottom: 40px;
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #d4af37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000000;
+    padding: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-logo h2 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer-social {
+    display: flex;
+}
+
+.social-icon {
+    margin-right: 10px;
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-right: 10px;
+    }
+
+    .contact-btn {
+        margin-top: 10px;
+    }
+
+    #hero {
+        padding: 0 10%;
+        margin-top: 120px; /* Ajustado para compensar el navbar en modo móvil */
+    }
+}
